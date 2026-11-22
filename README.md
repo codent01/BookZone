@@ -1,57 +1,135 @@
-# Full Stack E-Commerce Project using MERN
+<h1 align="center">📚 BookZone</h1>
+<p align="center">
+  <strong>Full-Stack E-Commerce Bookstore</strong><br/>
+  Browse, wishlist, cart, and purchase books — built with the MERN stack and deployed on AWS S3.
+</p>
 
-### Live Website Link - http://bookzone-store-web.s3-website.eu-north-1.amazonaws.com/
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AWS_S3-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+</p>
 
+<p align="center">
+  <a href="http://bookzone-store-web.s3-website.eu-north-1.amazonaws.com/">🌐 Live Demo</a>
+</p>
 
+---
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 🔐 User Authentication
+Secure sign-up, login, and logout with session management.
 
-### `npm start`
+### 📖 Product Catalog
+Browse a curated collection of books with a proper landing page, categories, and new arrivals section.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔍 Sort & Filter
+- Sort by price (low to high / high to low)
+- Filter by price range, genre, rating
+- Filter by stock availability and fast delivery
+- Clear all filters with one click
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ❤️ Wishlist
+Save books for later. Move items between wishlist and cart seamlessly.
 
-## Technologies used 
-1. HTML
-2. CSS
-3. JavaScript
-4. React
+### 🛒 Cart Management
+Add to cart, change quantities, remove items, move to wishlist, and apply coupon codes.
 
-- Node JS, Express JS and MongoDb is used for Backend server which is deployed on Vercel.
+### 💳 Razorpay Payments
+Integrated Razorpay payment gateway for secure checkout with order summary.
 
-## Features:
-1. User Authentication (Signup, Login and Logout)
-2. Proper Landing page with categories and New Arrivals
-3. Product Listing Page
-4. Sort and filter products
-   - Sort by Price Low to High and High to Low
-   - Filter using Minimum and Maximum Price Range
-   - Filter by Book Genre Categories
-   - Filter by average product rating
-   - Filter to include/exclude out of stock products
-   - Filter products as per fast delivery availability
-   - Clear all filters
-5. Wishlist Management 
-   - Add / remove from the wishlist
-   - Add items to cart
-6. Cart Management 
-   - Add to cart 
-   - Change items quantity in cart 
-   - Remove from cart
-   - Add to wishlist from cart
-   - Apply Coupon
-7. Single Product Page
-8. Order Summary of the ordered items
-9. Custom Toast Component with 4 types - Success, Error, Warning and Information
-10. Razorpay payment Integration
-11. Orders page
-12. Search bar to search books by Book name and Author name
-13. Pagination 
+### 🔎 Search
+Find books by title or author name with instant search.
 
+### 📄 Pagination
+Smooth browsing with paginated product listings.
 
+### 🔔 Custom Toast Notifications
+4 toast types — Success, Error, Warning, and Information — for clear user feedback.
 
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| **Frontend** | React, JavaScript, CSS3, HTML5 |
+| **Backend** | Node.js, Express.js (deployed on Vercel) |
+| **Database** | MongoDB |
+| **Payments** | Razorpay |
+| **Hosting** | AWS S3 (Static Hosting) |
+
+---
+
+## Project Structure
+
+```
+BookZone/
+├── public/                # Static assets & index.html
+├── src/
+│   ├── components/        # React UI components
+│   ├── pages/             # Page-level components
+│   ├── context/           # State management
+│   └── App.js             # Root component
+├── build/                 # Production build
+├── package.json
+└── README.md
+```
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js 16+
+- npm
+
+### Installation
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/codent01/BookZone.git
+   cd BookZone
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## Roadmap
+
+- [x] User authentication
+- [x] Product catalog with categories
+- [x] Sort, filter, and search
+- [x] Wishlist & cart management
+- [x] Coupon system
+- [x] Razorpay payment integration
+- [x] Order summary & orders page
+- [x] AWS S3 deployment
+- [ ] Admin dashboard for inventory
+- [ ] Order tracking and history
+- [ ] Book reviews and ratings
+
+---
+
+<p align="center">
+  <i>Your next favorite book is just a click away.</i><br/>
+  <strong>Browse. Wishlist. Read.</strong>
+</p>
